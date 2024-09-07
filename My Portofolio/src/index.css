@@ -46,69 +46,116 @@ header, footer {
   color: var(--muted-gold);
 } */
 
-nav {
-  display: flex;
-  /* justify-content: space-between;  */
-  align-items: center; 
- 
-}
 
-nav p {
-  color: var(--white);
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin: 0 20px;
-  border-bottom: 2px solid transparent;
-  transition: border-color var(--transition-speed), color var(--transition-speed);
-  flex: 1; /* Keeps the name on the leftmost side */
-}
-
-nav .nav-links {
-  display: flex;
-}
-
-nav a {
-  color: var(--white);
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  margin: 0 10px;
-  border-bottom: 2px solid transparent;
-  transition: border-color var(--transition-speed), color var(--transition-speed);
-}
-
-nav a:hover, nav a:focus, .active {
-  color: var(--muted-gold);
-  border-bottom: 2px solid var(--muted-gold);
-}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--nav-bg-color);
+  }
+  
+  nav p {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .menu-icon {
+    display: none; /* Hidden on large screens */
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    color: var(--white);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .active {
+    border-bottom: 2px solid var(--active-color);
+  }
 
 /* Section Styling */
+/* Section container */
 section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* background-color: none;  */
+  color: #2c3e50; /* Elegant dark blue */
+  padding: 200px 200px 200px 200px;
   text-align: center;
+  /* border-radius: 12px; */
+  max-width: 800px;
+  margin: 0 auto; /* Center the section */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  font-weight: 500;
-  color: var(--slate-blue);
+section:hover {
+  background-color: #ffffff; /* Slight background shift on hover */
+  transform: translateY(-8px); /* Elegant hover lift effect */
+}
+
+/* Headline styling */
+h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: #a0d2eb; /* Soft blue underline */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+h2:hover::after {
+  width: 100px; /* Extend underline on hover */
+}
+
+
+
+
+/* Paragraph styling */
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444; /* Subtle dark gray for text */
+  max-width: 700px;
+  margin: 20px auto;
+  transition: color 0.3s ease-in-out;
+}
+
+p:hover {
+  color: #2c3e50; /* Darken text on hover */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  line-height: 1.8;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--charcoal-black);
+  animation: fadeInUp 0.8s ease-out; /* Soft fade-in effect */
 }
+
+
+
+
+
+
+
 
 /* Avatar Styles */
 .avatar {
@@ -306,6 +353,42 @@ footer a:hover {
   .avatar {
     width: 120px;
     height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #4a5568;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex; 
+    /* Show links when the menu is clicked */
+  }
+
+  .menu-icon {
+    display: block; /* Show the three-dot icon on small screens */
+  }
+
+  nav p {
+    margin-right: auto; /* Keep the name on the left */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Hide the menu icon */
+  }
+
+  .nav-links {
+    display: flex; /* Show links by default on larger screens */
   }
 }
 
