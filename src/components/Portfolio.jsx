@@ -21,14 +21,17 @@ const Portfolio = () => {
   ];
 
   return (
-    <section>
-      <h2>Portfolio</h2>
-      <div className="projects">
+    <div >
+      <h1>Please, Take a look at my works</h1>
+      <section>
+      
+      <div className="projects" >
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}
       </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
