@@ -6,32 +6,32 @@ import weather from '../assets/images/weather.png'
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Insurance Management System',
+      title: 'Newsletter Signup Form',
       image: newsletter,
-      liveLink: 'http://example.com',
-      githubLink: 'https://github.com/Meadoughnut/insurance-management-system',
+      liveLink: 'https://meadoughnut.github.io/Newsletter_Sign-up_form/',
+      githubLink: 'https://github.com/Meadoughnut/Newsletter_Sign-up_form',
     },
     {
-      title: 'Another Cool Project',
+      title: 'Weather App ',
       image: weather,
-      liveLink: 'http://example.com',
-      githubLink: 'https://github.com/Meadoughnut/another-cool-project',
+      liveLink: 'https://meadoughnut.github.io/Weather_App/',
+      githubLink: 'https://github.com/Meadoughnut/Weather_App',
     },
     // Add more projects here
   ];
 
   return (
-    <div >
-      <h1>Please, Take a look at my works</h1>
-      <section>
+      <section className='Portfolio'>
+  
+      <h1> My works</h1>
       
       <div className="projects" >
         {projects.map((project, index) => (
           <Project key={index} project={project} />
-        ))}
-      </div>
+        ))}</div>
+     
       </section>
-    </div>
+  
   );
 };
 
