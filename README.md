@@ -37,8 +37,8 @@ This is my personal portfolio website built using **React**. It showcases my pro
 ## Screenshots
 
 
-- [Screenshots]!(../assets/images/ssofwebsite/whiteeffect.png)
-!(../assets/images/ssofwebsite/blackeffect.png)
+- ![Screenshots](/src/assets/images/ssofwebsite/whiteeffect.png)
+- ![Screenshots](/src/assets/images/ssofwebsite/blackeffect.png)
 
 ## Credits
 
