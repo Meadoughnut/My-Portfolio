@@ -11,7 +11,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <p>MM Front-End Developer</p>
+      <p>Meadin Menbere</p>
       <div className="menu-icon" onClick={toggleMenu}>
       {menuOpen ? '✖' : '☰'} {/* X icon when open, three dots when closed */}
       </div>
