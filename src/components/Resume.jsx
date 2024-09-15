@@ -35,13 +35,13 @@ const Resume = () => {
         
 
         
-        <h2>Resume</h2>
+        <h2>RESUME</h2>
         <hr></hr>
         <a href={Resumepdf} download="Meadin_Menbere_Resume.pdf">
           <strong>Download My Resume</strong>
         </a>
         
-        <h2>Proficiencies</h2>
+        <h2>SKILLS</h2>
       <hr />
       <ul className="proficiencies-list">
         {proficiencies.map((skill, index) => (

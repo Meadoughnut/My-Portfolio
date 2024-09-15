@@ -1,21 +1,5 @@
 
-:root {
-  --warm-gray: #f7fafc;
-  --muted-gold: #b49a67;
-  --transition-speed: 0.3s ease-in-out;
-}
-/* Reset and Base Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-image: url(./assets/images/mike.jpg);
-  color: black;
-  line-height: 1.6;
-  transition: background-color var(--transition-speed), color var(--transition-speed);
-}
+
 
 
 
@@ -419,7 +403,7 @@ button:hover {
 
 .resumesection a {
   display: block; 
-  margin: 20px auto; 
+  margin: 20px auto; /
   padding: 10px 20px;
   color: #000;
   background-color: #fff;
@@ -582,7 +566,7 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #fff; 
-  color: #000; 
+  color: #000; /
 }
 
 /* Optional h1 for your name */
@@ -614,7 +598,7 @@ nav a {
   }
 
   nav a {
-    font-size: 1.2rem; 
+    font-size: 1.2rem; /
   }
 }
 
@@ -679,4 +663,4 @@ nav a {
 
 
 
- 
+ */
