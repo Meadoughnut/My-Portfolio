@@ -16,6 +16,10 @@ body {
   line-height: 1.6;
   transition: background-color var(--transition-speed), color var(--transition-speed);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 
@@ -561,7 +565,7 @@ button:hover {
 @media (min-width: 768px) {
   .footer-section {
     flex-direction: row;  
-    padding: 40px;
+    padding: 10px;
   }
 
   .footer-section p {

@@ -2,7 +2,7 @@
 import image from "../assets/images/myphoto.jpeg"
 const AboutMe = () => {
     return (
-      <section  className="aboutsection">
+      <section id="about" className="aboutsection">
       <hr></hr>
         <br></br>
          <h1>Hello, I'M  MEADIN  MENBERE</h1>

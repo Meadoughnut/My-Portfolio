@@ -30,7 +30,8 @@ const Resume = () => {
       { name: 'Github', imgSrc: github } ];
   
     return (
-      <section className="resumesection">
+      <section id="resume"
+      className="resumesection">
         <br></br>
         
 
