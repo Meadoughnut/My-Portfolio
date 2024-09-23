@@ -33,6 +33,9 @@ This is my personal portfolio website built using **React**. It showcases my pro
 - **Contact**: A simple contact form where users can reach out to me via email.
 - **Resume**: A link to download my resume.
 
+## Live Link
+- [Please visit my Portfolio](https://whimsical-chebakia-7159d9.netlify.app/)
+
 
 ## Screenshots
 
