@@ -7,7 +7,7 @@ This is my personal portfolio website built using **React**. It showcases my pro
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
-- [Live Link](#Live Link)
+- [Live Link](#Live-Link)
 - [Screenshots](#screenshots)
 - [Credits](#credits)
 - [License](#license)
