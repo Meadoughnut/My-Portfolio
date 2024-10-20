@@ -1,6 +1,6 @@
 // /src/components/Portfolio.jsx
 import Project from './Project';
-import MHabeshamarket from '../assets/images/mhabesha.png'
+import MHabeshamarket from '../assets/images/projects/mhabesha.png'
 import LibraryOfCongressSearch from '../assets/images/projects/resultpage.png'
 import weather from '../assets/images/projects/weather.png'
 import SVG from '../assets/images/projects/svg.png'
