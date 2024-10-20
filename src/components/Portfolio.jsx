@@ -1,6 +1,7 @@
 // /src/components/Portfolio.jsx
 import Project from './Project';
-import newsletter from '../assets/images/projects/newsletter.png'
+import MHabeshamarket from '../assets/images/mhabesha.png'
+import LibraryOfCongressSearch from '../assets/images/projects/resultpage.png'
 import weather from '../assets/images/projects/weather.png'
 import SVG from '../assets/images/projects/svg.png'
 import Readme from '../assets/images/projects/readme.png'
@@ -10,10 +11,16 @@ import TaskBoard from '../assets/images/projects/taskboard.png'
 const Portfolio = () => {
   const projects = [
     {
-      title: 'Newsletter Signup Form',
-      image: newsletter,
+      title: 'MHabesha Traditional Clothing',
+      image: MHabeshamarket,
       liveLink: 'https://meadoughnut.github.io/Newsletter_Sign-up_form/',
       githubLink: 'https://github.com/Meadoughnut/Newsletter_Sign-up_form',
+    },
+    {
+      title: 'Library Of Congress Search',
+      image: LibraryOfCongressSearch,
+      liveLink: 'https://meadoughnut.github.io/Library-of-Congress-Search/',
+      githubLink: 'https://github.com/Meadoughnut/M-Habesha-Market',
     },
     {
       title: 'Weather App ',
