@@ -1,6 +1,6 @@
 // /src/components/Portfolio.jsx
 import Project from './Project';
-import MHabeshamarket from '../assets/images/projects/mhabesha.png'
+import MHabesha from '../assets/images/projects/homepage.png'
 import LibraryOfCongressSearch from '../assets/images/projects/resultpage.png'
 import weather from '../assets/images/projects/weather.png'
 import SVG from '../assets/images/projects/svg.png'
@@ -11,10 +11,10 @@ import TaskBoard from '../assets/images/projects/taskboard.png'
 const Portfolio = () => {
   const projects = [
     {
-      title: 'MHabesha Traditional Clothing',
-      image: MHabeshamarket,
-      liveLink: 'https://meadoughnut.github.io/Newsletter_Sign-up_form/',
-      githubLink: 'https://github.com/Meadoughnut/Newsletter_Sign-up_form',
+      title: 'MHabesha Clothing',
+      image: MHabesha,
+      liveLink: 'https://meadoughnut.github.io/MHabesha/',
+      githubLink: 'https://github.com/Meadoughnut/MHabesha',
     },
     {
       title: 'Library Of Congress Search',
