@@ -10,7 +10,7 @@ import react from '../assets/images/skillicons/react.svg'
 import sass from '../assets/images/skillicons/sass.svg'
 import tailwind from '../assets/images/skillicons/tailwind.svg'
 import github from '../assets/images/skillicons/github.svg'
-import Resumepdf from '../assets/pdf/Meadin_Menbere.pdf'
+import Resumepdf from '../assets/pdf/MTeck_s_Resume.pdf'
 
 
 
